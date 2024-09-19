@@ -73,5 +73,14 @@
             </plugin>
         </plugins>
     </build>
-
+    <distributionManagement>
+        <repository>
+            <id>2128349-release-K0sfvM</id>
+            <url>https://packages.aliyun.com/maven/repository/2128349-release-K0sfvM</url>
+        </repository>
+        <snapshotRepository>
+            <id>2128349-snapshot-WPMaFf</id>
+            <url>https://packages.aliyun.com/maven/repository/2128349-snapshot-WPMaFf</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

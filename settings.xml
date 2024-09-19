@@ -131,6 +131,16 @@ under the License.
           <passphrase>optional; leave empty if not used.</passphrase>
         </server>
         -->
+      <server>
+        <id>2128349-release-K0sfvM</id>
+        <username>6114b62c4e5db15d527c017d</username>
+        <password>C)sq9K18YxM6</password>
+      </server>
+      <server>
+        <id>2128349-snapshot-WPMaFf</id>
+        <username>6114b62c4e5db15d527c017d</username>
+        <password>C)sq9K18YxM6</password>
+      </server>
     </servers>
 
     <!-- mirrors
@@ -166,13 +176,13 @@ under the License.
         </mirror>
         <mirror>
             <id>aliyunmaven</id>
-            <mirrorOf>*</mirrorOf>
+            <mirrorOf>central,!2128349-release-K0sfvM,!2128349-snapshot-WPMaFf</mirrorOf>
             <name>阿里云公共仓库</name>
             <url>https://maven.aliyun.com/repository/public</url>
         </mirror>
         <mirror>
             <id>huaweicloud</id>
-            <mirrorOf>*</mirrorOf>
+            <mirrorOf>central,!2128349-release-K0sfvM,!2128349-snapshot-WPMaFf</mirrorOf>
             <url>https://repo.huaweicloud.com/repository/maven/</url>
         </mirror>
     </mirrors>
@@ -263,6 +273,31 @@ under the License.
           </properties>
         </profile>
         -->
+      <profile>
+        <id>rdc</id>
+        <repositories>
+          <repository>
+            <id>2128349-release-K0sfvM</id>
+            <url>https://packages.aliyun.com/maven/repository/2128349-release-K0sfvM</url>
+            <releases>
+              <enabled>true</enabled>
+            </releases>
+            <snapshots>
+              <enabled>false</enabled>
+            </snapshots>
+          </repository>
+          <repository>
+            <id>2128349-snapshot-WPMaFf</id>
+            <url>https://packages.aliyun.com/maven/repository/2128349-snapshot-WPMaFf</url>
+            <releases>
+              <enabled>false</enabled>
+            </releases>
+            <snapshots>
+              <enabled>true</enabled>
+            </snapshots>
+          </repository>
+        </repositories>
+      </profile>
     </profiles>
 
     <!-- activeProfiles
