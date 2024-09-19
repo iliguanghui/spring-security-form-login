@@ -308,4 +308,7 @@ under the License.
       <activeProfile>anotherAlwaysActiveProfile</activeProfile>
     </activeProfiles>
     -->
+    <activeProfiles>
+      <activeProfile>rdc</activeProfile>
+    </activeProfiles>
 </settings>
